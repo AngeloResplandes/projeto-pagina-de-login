@@ -31,7 +31,7 @@ body {
     width: 384px;
     position: fixed;
     top: 10px;
-    left: 135px;
+    margin-right: 35px;
 }
 
 .main {
