@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -19,11 +21,64 @@ body {
     width: 50vw;
     height: 100vh;
     padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(248, 250, 252, 1);
 }
 
-.logo {
-    margin-top: 30px;
+.title {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: rgba(30, 41, 59, 1);
+    margin: 0 0 20px 0;
 }
+
+.subtext {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgba(71, 85, 105, 1);
+    width: 350px;
+    margin: 0 0 30px 0;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+}
+
+.email label,
+.password label {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: rgba(30, 41, 59, 1);
+    margin-bottom: 5px;
+}
+
+.email input,
+.password input {
+    margin-bottom: 30px;
+    height: 43px;
+}
+
+.title-password {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 384px;
+    height: 43px;
+}
+
 
 .right-side img {
     width: 50vw;
