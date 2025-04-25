@@ -20,11 +20,23 @@ body {
 .left-side {
     width: 50vw;
     height: 100vh;
-    padding-left: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: rgba(248, 250, 252, 1);
+}
+
+.logo {
+    width: 384px;
+    position: fixed;
+    top: 10px;
+    left: 135px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
@@ -32,8 +44,8 @@ body {
     font-weight: 700;
     font-style: normal;
     font-size: 36px;
-    color: rgba(30, 41, 59, 1);
-    margin: 0 0 20px 0;
+    color: #1E293B;
+    margin: 0;
 }
 
 .subtext {
@@ -41,16 +53,15 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: rgba(71, 85, 105, 1);
+    color: #475569;
     width: 350px;
-    margin: 0 0 30px 0;
+    margin: 20px 0 0 0;
 }
 
 .email,
 .password {
     display: flex;
     flex-direction: column;
-    width: 384px;
 }
 
 .email label,
@@ -59,26 +70,129 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
-    color: rgba(30, 41, 59, 1);
+    color: #1E293B;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
 .email input,
 .password input {
-    margin-bottom: 30px;
-    height: 43px;
+    width: 384px;
+    height: 53px;
+    border: 1px solid #E2E8F0;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #000;
+    padding: 10px;
+}
+
+.email input::placeholder,
+.password input::placeholder {
+    color: #94A3B8;
+}
+
+.email input:focus,
+.password input:focus,
+.email input:hover,
+.password input:hover {
+    border: 1px solid #7C3AED;
+    outline: none;
+}
+
+.error-message {
+    display: none;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #ED3A5A;
 }
 
 .title-password {
     display: flex;
     justify-content: space-between;
-}
-
-button {
     width: 384px;
-    height: 43px;
 }
 
+.title-password a {
+    text-decoration: none;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: #7C3AED;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.title-password a:hover,
+.title-password a:focus {
+    text-decoration: underline;
+}
+
+.input-password {
+    display: flex;
+}
+
+.eye-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    position: relative;
+    top: 15px;
+    right: 30px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.submit {
+    width: 384px;
+    height: 56px;
+    background-color: #7C3AED;
+    color: #fff;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.submit:hover,
+.submit:focus {
+    background-color: #9F67FF;
+    transition: all 0.3s ease-in-out;
+}
+
+.create-acount p {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #475569;
+    margin: 0;
+}
+
+.create-acount a {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+.create-acount a:hover,
+.create-acount a:focus {
+    text-decoration: underline;
+}
 
 .right-side img {
     width: 50vw;

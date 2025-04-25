@@ -23,23 +23,33 @@
                 <form action="">
                     <div class="email">
                         <label for="email">E-mail</label>
-                        <input type="email">
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                        <span class="error-message">Digite um e-mail válido</span>
                     </div>
                     <div class="password">
                         <div class="title-password">
                             <label for="password">Senha</label>
                             <a href="">Esqueceu a senha?</a>
                         </div>
-                        <input type="password">
+                        <div class="input-password">
+                            <input type="password" id="password" placeholder="Digite sua senha">
+                            <button type="button" class="eye-button">
+                                <img src="assets/images/eye-off.svg" alt="" id="eye-icon">
+                            </button>
+                        </div>
                     </div>
-                    <button>Entrar</button>
+                    <button class="submit">Entrar</button>
                 </form>
+                <div class="create-acount">
+                    <p>Ainda não tem uma conta? <a href="">Inscreva-se</a></p>
+                </div>
             </div>
         </section>
         <section class="right-side">
             <img src="assets/images/bg.jpg" alt="background">
         </section>
     </div>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>
